@@ -4,13 +4,17 @@ A self-contained Pokémon-style park explorer built on Zo Space. Navigate with W
 
 **Live:** [https://etok.zo.space/amity-square](https://etok.zo.space/amity-square)
 
-> **Zo Space mirror repo:** this repository is a tracked mirror of the live Zo Space route at `https://etok.zo.space/amity-square`. Keep the repo and the deployed route in sync so Git reflects what is running now.
+> **Zo Space mirror repo:** this repository is a tracked mirror of the live Zo Space route family for Amity Square. Keep the repo and the deployed routes in sync so Git reflects what is running now.
 
-## Route
+## Routes
 
 | Path | Type | Description |
 |------|------|-------------|
 | `/amity-square` | page | Isometric park explorer |
+| `/amity-square-mask-editor` | page | Collision-mask and object editor |
+| `/api/amity-square-config` | API | Shared editor/game config and asset paths |
+| `/api/amity-square-publish` | API | Publish mask and object changes back to the live game |
+| `/api/amity-square-rollback` | API | Roll back to a saved Amity Square version |
 
 ## Controls
 
@@ -39,10 +43,11 @@ A self-contained Pokémon-style park explorer built on Zo Space. Navigate with W
 
 ## Architecture
 
-- `routes/amity-square.ts` — Single-file React component (~400 lines)
-- World map defined as a 34×26 tile grid with hand-coded layout
-- Animation loop via `requestAnimationFrame` inside `useEffect`
-- Keyboard events attached to `window` for global capture
+- `routes/amity-square.ts` — live game route
+- `routes/amity-square-mask-editor.ts` — browser editor for the walk mask and placed objects
+- `routes/api/amity-square-config.ts` — shared config endpoint for the game and editor
+- `routes/api/amity-square-publish.ts` — publish endpoint for new mask/object versions
+- `routes/api/amity-square-rollback.ts` — rollback endpoint for restoring prior versions
 
 ## Development
 

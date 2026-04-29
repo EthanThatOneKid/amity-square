@@ -6,14 +6,18 @@ Pokémon-style Amity Square reconstruction on Zo Space. WASD/arrow key movement,
 
 ## Mirror Status
 
-This repo is a mirror of the live Zo Space route at `https://etok.zo.space/amity-square`.
-Treat repo updates and Zo Space updates as a paired sync operation so Git history matches the live route.
+This repo is a mirror of the live Zo Space route family for Amity Square.
+Treat repo updates and Zo Space updates as a paired sync operation so Git history matches the live routes.
 
 ## Routes
 
 | Path | Type | Description |
 |------|------|-------------|
 | `/amity-square` | page | Interactive park explorer (canvas-based) |
+| `/amity-square-mask-editor` | page | Live mask/object editor |
+| `/api/amity-square-config` | api | Shared editor/game config |
+| `/api/amity-square-publish` | api | Publish mask/object changes |
+| `/api/amity-square-rollback` | api | Restore a prior saved version |
 
 ## Controls
 
