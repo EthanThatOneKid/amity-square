@@ -1,4 +1,4 @@
-# amity-square
+# amity-square (legacy mirror)
 
 Pokémon-style Amity Square reconstruction on Zo Space. WASD/arrow key movement, camera follow, authentic Platinum Lucas/Pikachu overworld sprites, and a map-image background tied to an OBJ-derived walk mask.
 
@@ -6,8 +6,8 @@ Pokémon-style Amity Square reconstruction on Zo Space. WASD/arrow key movement,
 
 ## Mirror Status
 
-This repo is a mirror of the live Zo Space route family for Amity Square.
-Treat repo updates and Zo Space updates as a paired sync operation so Git history matches the live routes.
+This top-level directory is a legacy mirror. The canonical repo lives at `/home/workspace/code/github.com/EthanThatOneKid/amity-square/`.
+Treat edits here only as mirror maintenance; use the canonical repo for source-of-truth work.
 
 ## Routes
 
