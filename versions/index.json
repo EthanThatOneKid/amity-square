@@ -1,0 +1,10 @@
+{
+  "versions": [
+    {
+      "id": "v_1777415413",
+      "created_at": 1777415413,
+      "mask_file": "v_1777415413-mask.png",
+      "objects_file": "v_1777415413-objects.json"
+    }
+  ]
+}
